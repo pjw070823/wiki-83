@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.wiki-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.wiki-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.wiki-content {
+  padding: 20px;
+}
+
+.wiki-subtitle {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.wiki-subsubtitle {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.wiki-text {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.wiki-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.wiki-list li {
+  margin-bottom: 10px;
+}
+
+.wiki-sidebar {
+  float: right;
+  width: 200px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+}
+
+.wiki-sidebar-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.wiki-sidebar-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.wiki-sidebar-list li {
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #337ab7;
+}
+
+a:hover {
+  color: #23527c;
+}
+    </style>
+</head>
+
+<body>
+    <div class="wiki-container">
+        <h1 class="wiki-title">Documentation</h1>
+        <div class="wiki-content">
+            <h2 class="wiki-subtitle">Introduction</h2>
+            <p class="wiki-text">Welcome to our documentation portal. This page serves as an introduction to our project
+                and provides an overview of the available resources.</p>
+            <h3 class="wiki-subsubtitle">Getting Started</h3>
+            <ul class="wiki-list">
+                <li>Clone the repository from GitHub: <code>git clone https://github.com/our-project.git</code></li>
+                <li>Install the dependencies using npm: <code>npm install</code></li>
+                <li>Start the development server: <code>npm start</code></li>
+            </ul>
+            <h3 class="wiki-subsubtitle">Project Structure</h3>
+            <ul class="wiki-list">
+                <li><code>src</code>: Contains the source code for the project</li>
+                <li><code>docs</code>: Contains the documentation files (like this one)</li>
+                <li><code>tests</code>: Contains the unit tests and integration tests</li>
+            </ul>
+            <h2 class="wiki-subtitle">API Documentation</h2>
+            <p class="wiki-text">Our API documentation is available at <a href="/docs/api">API Documentation</a>.</p>
+            <h2 class="wiki-subtitle">Contributing</h2>
+            <p class="wiki-text">We welcome contributions to our project. Please see our <a
+                    href="/docs/contributing">Contributing Guidelines</a> for more information.</p>
+        </div>
+        <div class="wiki-sidebar">
+            <h2 class="wiki-sidebar-title">Related Pages</h2>
+            <ul class="wiki-sidebar-list">
+                <li><a href="/docs/api">API Documentation</a></li>
+                <li><a href="/docs/contributing">Contributing Guidelines</a></li>
+                <li><a href="/docs/roadmap">Project Roadmap</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

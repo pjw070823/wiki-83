@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나만</title>
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    <style>
+        /* Minimal custom styles */
+        .container {
+            display: flex;
+            flex-direction: column;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                flex-direction: row;
+            }
+
+            .toc {
+                flex-basis: 25%;
+                margin-right: 2rem;
+            }
+
+            .content {
+                flex-basis: 70%;
+            }
+        }
+
+        nav {
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+
+        .toc ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 2rem;
+        }
+        
+        /* Style for the Table of Contents (TOC) box */
+        aside.toc {
+            border: 1px solid #4e5d6c;
+            padding: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-radius: 8px;
+            background-color: #1f2937;
+            /* Dark background similar to articles */
+            color: #ffffff;
+        }
+        
+        .toc li a {
+            display: inline;
+            text-decoration-line: none;
+        }
+
+        /* Flex layout for dropdown buttons and headers */
+        summary {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        summary h3 {
+            margin: 0;
+        }
+
+        /* Add color to chapter numbers */
+        h3::before {
+            content: attr(data-number) " ";
+            color: #1a73e8;
+            /* Chapter number color */
+            font-weight: bold;
+        }
+
+        /* Divider line for each chapter */
+        details {
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid #4e5d6c;
+            /* Divider line color */
+            padding-bottom: 1rem;
+        }
+
+        /* Remove default marker */
+        summary::marker {
+            display: none;
+        }
+
+        /* Dim the title when <details> is closed */
+        details[open] summary h3 {
+            color: #fff;
+            /* Normal title color */
+        }
+
+        details:not([open]) summary h3 {
+            color: #7a7a7a;
+            /* Dimmed title color */
+        }
+
+        /* Adjusting space between chapter sections */
+        details summary {
+            margin-bottom: 0.5rem;
+        }
+
+        article p {
+            margin-left: 0.5rem;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header class="container-fluid">
+        <nav>
+            <ul>
+                <li><strong style="font-size: xx-large;">Wiki 83</strong></li>
+            </ul>
+            <ul>
+                <li><a href="#">골라</a></li>
+                <li><a href="#">주사위</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <aside class="toc" style="height: fit-content;">
+            <h3>목차</h3>
+            <ul>
+                <li><a href="#1">1.</a> 개요</li>
+                <li><a href="#2">2.</a> 변형</li>
+            </ul>
+        </aside>
+
+        <section class="content">
+            <article>
+                <h2>나만</h2>
+                <p>
+                    최근 수정 시각: 2024-10-20
+                    <button class="outline secondary" style="float: right; padding: 0.4rem; font-size: medium;">편집</button>
+                </p>
+            </article>
+
+            <article>
+                <details id="1" open>
+                    <summary>
+                        <h3 data-number="1.">개요</h3>
+                    </summary>
+                    <p>으악ㅋㅋㅋㅋㅋㅋ</p>
+                </details>
+
+                <details id="2" open>
+                    <summary>
+                        <h3 data-number="2.">변형</h3>
+                    </summary>
+                    <p>
+                        <ul>
+                            <li>나만ㅋㅋㅋㅋ</li>
+                            <li>개나만</li>
+                            <li>skaks</li>
+                        </ul>
+                    </p>
+                </details>
+
+            </article>
+        </section>
+    </div>
+
+    <footer>
+        <p></p>
+    </footer>
+
+</body>
+
+</html>
